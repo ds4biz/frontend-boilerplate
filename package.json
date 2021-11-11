@@ -32,6 +32,7 @@
     "prepare": "husky install",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "rm -rf ../PROJECT_NAME/static/* && cp -a ./build/. ../PROJECT_NAME/static",
     "deploy": "serve -s build -l 8000",
     "deploy:clean": "yarn build && serve -s build -l 8000",
     "test": "react-scripts test",
