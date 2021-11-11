@@ -17,7 +17,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
@@ -26,6 +26,9 @@
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "object-curly-newline": "off",
     "default-case": "off",
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
     "import/prefer-default-export": "off",
     "react/jsx-no-bind": "off",
     "react/jsx-props-no-spreading": "off",
